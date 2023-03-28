@@ -2,6 +2,7 @@ import React from 'react'
 import slide1 from "../assets/slide1.jpg";
 import slide2 from "../assets/slide2.jpg";
 import slide3 from "../assets/slide4.jpg";
+import coding from '../assets/coding.jpg'
 
 const ICT = () => {
   return (
@@ -12,7 +13,7 @@ const ICT = () => {
               <img src={slide2} className="w-[200px] h-[200px] shadow-2xl shadow-gray-500 rounded-full"/>
           </div>
           <div>
-            <img src={slide3} className="w-[420px] h-[420px] rounded-full shadow-2xl shadow-gray-500"/>
+            <img src={coding} className="w-[420px] h-[420px] rounded-full shadow-2xl shadow-gray-500"/>
             </div>
         </div>
  

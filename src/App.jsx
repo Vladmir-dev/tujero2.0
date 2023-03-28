@@ -8,6 +8,7 @@ import ZZH from "./assets/ZZH.jpg";
 import Carousel from "./components/Carousel";
 import Services from "./components/Services"
 import About from "./components/About"
+import Contact from './components/Contact'
 import Footer from "./components/footer/Footer"
 import { useState } from 'react'
 //import reactLogo from './assets/react.svg'
@@ -19,10 +20,10 @@ function App() {
   //const [count, setCount] = useState(0)
   const slides = [
     {
-      url: dec,
+      url: slide1,
     },
     {
-      url: Dec,
+      url: slide2,
     },
     {
       url: ZZH,
@@ -35,6 +36,7 @@ function App() {
       <Carousel imageSlide={slides} height="100vh" />
       <Services />
       <About />
+      <Contact />
       <Footer />
     </div>
   )

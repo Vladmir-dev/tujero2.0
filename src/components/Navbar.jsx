@@ -29,10 +29,10 @@ useEffect(() => {
       {/*destop view*/}
       <div className="flex md:justify-around justify-between items-center p-4">
       <div className="md:w-[70px] w-[50px] h-[50px] md:h-[70px] ">
-         <img src={logo} alt="logo" />
+         {show ? <img src={logo} alt="logo" /> : <img src={logo2} alt="logo" />}
       </div>
         {/*mobile*/}
-        <button className="md:hidden text-black text-[37px]">
+        <button className={show ? "md:hidden text-black text-[37px]" : "text-white text-[37px] md:hidden bg-red-500"}>
           <AiOutlineMenu />
         </button>
         {/* desktop*/}
