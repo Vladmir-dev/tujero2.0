@@ -1,7 +1,7 @@
 import React from 'react'
-import about1 from "../assets/about1.jpeg"
+import about1 from "../assets/we.jpg"
 import about2 from "../assets/about2.jpeg"
-import about3 from "../assets/about4.jpeg"
+import about3 from "../assets/woman.jpg"
 
 const About = () => {
   return (
