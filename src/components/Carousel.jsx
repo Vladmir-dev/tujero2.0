@@ -59,15 +59,15 @@ const Carousel = ({imageSlide, height, title}) => {
         <div className=" w-full md:m-[200px] flex flex-col justify-center flex-wrap">
           <div className="flex md:gap-[70px] md:justify-start md:flex-row flex-col gap-8 justify-center items-center font-serif">
            <div className="font-bold md:text-[47px] text-[25px] flex justify-center items-center flex-col">
-               <h1>20 +</h1>
+               <h1>10 +</h1>
                <h1>Products</h1>
            </div>
            <div className="font-bold md:text-[47px] text-[25px] flex justify-center items-center flex-col" >
-               <h1>15 +</h1>
+               <h1>5 +</h1>
                <h1>MVPs</h1>
            </div>
           <div className="font-bold md:text-[47px] text-[25px] flex justify-center items-center flex-col" >
-               <h1>10 +</h1>
+               <h1>5 +</h1>
                <h1>Clients</h1>
            </div>
         </div>       

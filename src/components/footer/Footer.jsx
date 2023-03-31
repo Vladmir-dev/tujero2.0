@@ -14,14 +14,13 @@ const Footer = () => {
           <li className="md:text-[25px] text-[20px] text-blue-500 font-semibold">
             Contact Us
           </li>
-          <li className="text-[16px] p-[2px]">Plot 2a, Old Port Bell Road,</li>
-          <li className="text-[16px] p-[2px]">Industrial Area. Opp. Top Cuts</li>
-          <li className="text-[16px] p-[2px]">Phone:0772 853285/041 4349394</li>
-          <li className="text-[16px] p-[2px]">Email :sales@yousite.com</li>
+          <li className="text-[16px] p-[2px]">Mukwano Courts, Buganda Roada</li>
+          <li className="text-[16px] p-[2px]">Level 2, 201-202B3</li>
+          <li className="text-[16px] p-[2px]">Phone:+256 781 316707/+256 706 181003</li>
+          <li className="text-[16px] p-[2px]">Email :info@tujero.com</li>
           <li className="flex mt-[10px] p-[5px] gap-4 items-center">
             <FaFacebookF />
             <AiOutlineTwitter />
-            <FaPinterestP />
             <AiFillInstagram />
           </li>
         </ul>
@@ -33,39 +32,7 @@ const Footer = () => {
         <div className="p-[10px] flex flex-col md:flex-row md:justify-around justify-between">
           <p className="md:text-[12px] text-[13px] order-last text-center py-[5px] md:order-first">
           Copyright ©{year} All rights reserved | Developed by TUJERO ENTEPRISES
-          </p>
-          <div className="flex gap-4 py-[5px] items-center justify-center">
-            <img
-              className="bg-white w-[30px] h-[20px]"
-              src="https://shoplineimg.com/assets/footer/card_visa.png"
-              alt=""
-            />
-            <img
-              className="bg-white w-[30px] h-[20px]"
-              src="https://shoplineimg.com/assets/footer/card_master.png"
-              alt=""
-            />
-            <img
-              className="bg-white w-[30px] h-[20px]"
-              src="https://shoplineimg.com/assets/footer/card_paypal.png"
-              alt=""
-            />
-            <img
-              className="bg-white w-[30px] h-[20px]"
-              src="https://shoplineimg.com/assets/footer/card_amex.png"
-              alt=""
-            />
-            <img
-              className="bg-white w-[30px] h-[20px]"
-              src="https://shoplineimg.com/assets/footer/card_jcb.png"
-              alt=""
-            />
-            <img
-              className="bg-white w-[30px] h-[20px]"
-              src="https://shoplineimg.com/assets/footer/card_ecpay.png"
-              alt=""
-            />
-          </div>
+          </p> 
         </div>
       </div>
     </div>

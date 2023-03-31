@@ -1,11 +1,5 @@
 export const items = [
-	{head: "Quick Shop", submenu:true, subitems: [
-
-		{name:"Decra", link:"/"},
-		{name:"Grohe",link:"/"},
-		{name:"Twyford",link:"/"},
-		{name:"Master",link:"/"},
-	]},{
+	{
 		head: "Information", submenu:true, subitems: [
 
 		{name:"About Us",link:"/"},
