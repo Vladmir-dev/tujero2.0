@@ -6,7 +6,7 @@ import coding from '../assets/coding.jpg'
 
 const ICT = () => {
   return (
-    <div className="flex justify-center w-full  mt-[70px] p-4 gap-20 items-center">
+    <div className="flex justify-center w-full  md:mt-[70px] p-4 gap-20 items-center">
       <div className="hidden md:block">
         <div className="flex justify-center gap-20 items-center p-4">
           <div className="flex flex-col gap-20 justify-center items-center">
