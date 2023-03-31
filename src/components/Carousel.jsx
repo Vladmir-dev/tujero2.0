@@ -3,6 +3,7 @@ import React, {useState, useEffect} from 'react'
 import { SlArrowLeft, SlArrowRight,SlArrowDown } from "react-icons/sl";
 // import logo from '../images/logo-.png'
 // import { motion } from "framer-motion";
+import {Link} from 'react-scroll'
 
 const Carousel = ({imageSlide, height, title}) => {
     const [currentState, setCurrentState] = useState(0);
@@ -76,9 +77,11 @@ const Carousel = ({imageSlide, height, title}) => {
           <SlArrowRight className="text-[40px] p-2" />
         </button>
       </div>
+      <Link to="services" smooth={true} duration={700}>
      <div className="w-full justify-center items-center flex mt-[150px] font-bold md:text-[56px] text-[35px] text-white bottom-0">
           < SlArrowDown className="text-center"/>
      </div>
+     </Link>
     </div>
   )
 }

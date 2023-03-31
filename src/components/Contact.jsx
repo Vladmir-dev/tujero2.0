@@ -15,7 +15,7 @@ const Contact = () => {
 
   return (
 
-    <div style={bgImageStyle} className="mt-[100px] p-4 flex flex-col bg-gradient-to-r from-indigo-500 justify-center items-center bg-blue-600 font-serif mb-[-50px]">
+    <div id="contact" style={bgImageStyle} className="mt-[100px] p-4 flex flex-col bg-gradient-to-r from-indigo-500 justify-center items-center bg-blue-600 font-serif mb-[-50px]">
       <div className="flex flex-col font-bold  justify-center items-center md:text-[45px] text-[30px] text-black mt-[50px]">
         <h1>Make A</h1>
         <h1>Free Consultation</h1>

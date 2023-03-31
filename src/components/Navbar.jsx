@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import logo from '../assets/logo.png'
 import logo2 from '../assets/logo2.png'
 import { AiOutlineMenu } from 'react-icons/ai'
-
+import {Link} from 'react-scroll'
 const Navbar = () => {
 const [show, setShow] = useState(false);
 
@@ -38,10 +38,21 @@ useEffect(() => {
         {/* desktop*/}
       <div className="flex justify-center font-serif items-center hidden md:block">
         <ul className={show ? "flex text-black hover:text-blue-500 font-bold gap-10 justify-between items-center": "flex text-black hover:text-blue-500 text-white font-bold gap-10 justify-between items-center"}>
-          <li className="pl-4 pr-4 text-[25px]  duration-500 hover:bg-blue-400 hover:text-white rounded-md">Home</li>
-          <li className="pl-4 pr-4 text-[25px] duration-500 hover:bg-blue-400 hover:text-white rounded-md">Services</li>
-          <li className="pl-4 pr-4 text-[25px] duration-500 hover:bg-blue-400 hover:text-white rounded-md">About Us</li>
-          <li className="pl-4 pr-4 text-[25px] duration-500 hover:bg-blue-400 hover:text-white rounded-md">Contact</li>
+          
+            <Link 
+              to='home'
+              smooth={true} 
+              duration={700}
+            >
+              <li
+                className="pl-4 pr-4 text-[25px]  duration-500 hover:bg-blue-400 hover:text-white rounded-md"
+              >
+                Home
+              </li>
+            </Link>
+          <Link to='services' smooth={true} duration={700}><li className="pl-4 pr-4 text-[25px] duration-500 hover:bg-blue-400 hover:text-white rounded-md">Services</li></Link>
+          <Link to='about' smooth={true} duration={700}><li className="pl-4 pr-4 text-[25px] duration-500 hover:bg-blue-400 hover:text-white rounded-md">About Us</li></Link>
+          <Link to='contact' smooth={true} duration={700}><li className="pl-4 pr-4 text-[25px] duration-500 hover:bg-blue-400 hover:text-white rounded-md">Contact</li></Link>
         </ul>
       </div>
       
