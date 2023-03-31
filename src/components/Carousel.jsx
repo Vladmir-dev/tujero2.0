@@ -49,23 +49,23 @@ const Carousel = ({imageSlide, height, title}) => {
       }, [currentState]);
 
   return (
-    <div id="home" style={bgImageStyle} className="flex w-full flex-col justify-center items-center">
-      <div className="mt-[100px] md:p-10 text-white w-full flex flex-row justify-between items-center">
+    <div id="home" style={bgImageStyle} className="flex w-full flex-col justify-between md:justify-evenly items-center box-border">
+      <div className="md:mt-[100px] mt-[300px] md:p-10 p-4 text-white w-full flex flex-row justify-between items-center">
         <button className="hover:bg-white hover:text-black border-[2px] border-solid border-solid rounded-full" onClick={() => goPrev()}>
           <SlArrowLeft className="text-[40px] p-2" />
         </button>
-        <div className="w-full flex-col ml-[100px] flex justify-center items-center">
+        <div className="w-full flex-col md:ml-[100px] flex justify-center items-center">
         <div className=" w-full md:m-[200px] flex flex-col justify-center flex-wrap">
-          <div className="flex gap-[70px] font-serif">
-           <div className="font-bold text-[47px] flex justify-center items-center flex-col">
+          <div className="flex md:gap-[70px] md:justify-start md:flex-row flex-col gap-8 justify-center items-center font-serif">
+           <div className="font-bold md:text-[47px] text-[25px] flex justify-center items-center flex-col">
                <h1>20 +</h1>
                <h1>Products</h1>
            </div>
-           <div className="font-bold text-[47px] flex justify-center items-center flex-col" >
+           <div className="font-bold md:text-[47px] text-[25px] flex justify-center items-center flex-col" >
                <h1>15 +</h1>
                <h1>MVPs</h1>
            </div>
-          <div className="font-bold text-[47px] flex justify-center items-center flex-col" >
+          <div className="font-bold md:text-[47px] text-[25px] flex justify-center items-center flex-col" >
                <h1>10 +</h1>
                <h1>Clients</h1>
            </div>

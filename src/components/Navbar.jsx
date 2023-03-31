@@ -23,8 +23,8 @@ useEffect(() => {
   return (
     <div className={`${
         show
-          ? "md:fixed fixed z-20 w-full bg-white drop-shadow-lg duration-500 h-auto "
-          : "fixed z-20 w-full"
+          ? "md:fixed fixed z-20 w-screen bg-white drop-shadow-lg duration-500 h-auto "
+          : "fixed z-20 w-screen"
       }`}>
       {/*destop view*/}
       <div className="flex md:justify-around justify-between items-center p-4">
@@ -32,7 +32,7 @@ useEffect(() => {
          {show ? <img src={logo} alt="logo" /> : <img src={logo2} alt="logo" />}
       </div>
         {/*mobile*/}
-        <button className={show ? "md:hidden text-black text-[37px]" : "text-white text-[37px] md:hidden bg-red-500"}>
+        <button className={show ? "md:hidden text-black text-[37px]" : "text-white text-[37px] md:hidden "}>
           <AiOutlineMenu />
         </button>
         {/* desktop*/}
