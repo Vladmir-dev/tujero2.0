@@ -1,6 +1,6 @@
 import React from 'react'
-import slide1 from "../assets/slide1.jpg";
-import slide2 from "../assets/slide2.jpg";
+import slide1 from "../assets/ai.jpg";
+import slide2 from "../assets/ic.jpg";
 import slide3 from "../assets/slide4.jpg";
 import coding from '../assets/coding.jpg'
 

@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 // import imageSlide from "./data";
-import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
+import { SlArrowLeft, SlArrowRight,SlArrowDown } from "react-icons/sl";
 // import logo from '../images/logo-.png'
 // import { motion } from "framer-motion";
 
@@ -49,28 +49,36 @@ const Carousel = ({imageSlide, height, title}) => {
       }, [currentState]);
 
   return (
-    <div id="home" style={bgImageStyle} className="flex w-full ">
+    <div id="home" style={bgImageStyle} className="flex w-full flex-col justify-center items-center">
       <div className="mt-[100px] md:p-10 text-white w-full flex flex-row justify-between items-center">
         <button className="hover:bg-white hover:text-black border-[2px] border-solid border-solid rounded-full" onClick={() => goPrev()}>
           <SlArrowLeft className="text-[40px] p-2" />
         </button>
-        <div className="w-full flex justify-center items-center">
-          <div className=" w-full md:m-[200px] flex flex-col justify-center flex-wrap">
-            <h1 className="md:text-[45px]  text-[1.875rem] text-center text-blue-500 font-bold">
-              Get Quality And Adorable Services
-            </h1>
-            <p className="text-center md:text-[25px] text-white font-serif">
-              An Enterprise that brings you services in the area of Marketing
-              and Sales, IT Consultance and Hub (Software, Website, Apps and
-              System Development), Business Modeling and Planning, Auditing and
-              Taxation consultance
-            </p>
-          </div>
-        </div>
+        <div className="w-full flex-col ml-[100px] flex justify-center items-center">
+        <div className=" w-full md:m-[200px] flex flex-col justify-center flex-wrap">
+          <div className="flex gap-[70px] font-serif">
+           <div className="font-bold text-[47px] flex justify-center items-center flex-col">
+               <h1>20 +</h1>
+               <h1>Products</h1>
+           </div>
+           <div className="font-bold text-[47px] flex justify-center items-center flex-col" >
+               <h1>15 +</h1>
+               <h1>MVPs</h1>
+           </div>
+          <div className="font-bold text-[47px] flex justify-center items-center flex-col" >
+               <h1>10 +</h1>
+               <h1>Clients</h1>
+           </div>
+        </div>       
+      </div>   
+      </div>
         <button className="hover:bg-white hover:text-black border-[2px] border-solid border-solid rounded-full" onClick={() => goNext()}>
           <SlArrowRight className="text-[40px] p-2" />
         </button>
       </div>
+     <div className="w-full justify-center items-center flex mt-[150px] font-bold text-[56px] text-white bottom-0">
+          < SlArrowDown className="text-center"/>
+     </div>
     </div>
   )
 }

@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar'
 import slide1 from "./assets/slide1.jpg";
+import slide from './assets/slide.jpg'
 import slide2 from "./assets/slide2.jpg";
 import slide3 from "./assets/slide4.jpg";
 import dec from "./assets/decra-.jpg";
@@ -23,10 +24,7 @@ function App() {
       url: slide1,
     },
     {
-      url: slide2,
-    },
-    {
-      url: ZZH,
+      url: slide,
     },
   ];
 
