@@ -7,7 +7,8 @@ import coding from '../assets/coding.jpg'
 const ICT = () => {
   return (
     <div className="flex justify-center w-full  mt-[70px] p-4 gap-20 items-center">
-        <div className="flex hidden md:block justify-center gap-20 items-center  p-4">
+      <div className="hidden md:block">
+        <div className="flex justify-center gap-20 items-center p-4">
           <div className="flex flex-col gap-20 justify-center items-center">
               <img src={slide1} className="w-[300px] h-[300px] shadow-2xl shadow-gray-500 rounded-full"/>
               <img src={slide2} className="w-[200px] h-[200px] shadow-2xl shadow-gray-500 rounded-full"/>
@@ -16,7 +17,7 @@ const ICT = () => {
             <img src={coding} className="w-[420px] h-[420px] rounded-full shadow-2xl shadow-gray-500"/>
             </div>
         </div>
- 
+      </div>
 
         <div className="flex justify-center items-center  h-full p-4">
           <ul className="flex flex-col gap-16 w-full">
