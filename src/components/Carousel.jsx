@@ -78,7 +78,8 @@ const Carousel = ({imageSlide, height, title}) => {
         </button>
       </div>
       <Link to="services" smooth={true} duration={700}>
-     <div className="w-full justify-center items-center flex mt-[150px] font-bold md:text-[56px] text-[35px] text-white bottom-0">
+     <div className="w-full justify-center items-center flex flex-col mt-[50px]  font-bold md:text-[56px] text-[35px] text-white bottom-0">
+          <h2 className="text-[25px]">Get Started</h2>
           < SlArrowDown className="text-center"/>
      </div>
      </Link>
