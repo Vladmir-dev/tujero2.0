@@ -37,7 +37,7 @@ useEffect(() => {
         </button>
         {/* desktop*/}
       <div className="flex justify-center font-serif items-center hidden md:block">
-        <ul className="flex text-black hover:text-blue-500 font-bold gap-10 justify-between items-center">
+        <ul className={show ? "flex text-black hover:text-blue-500 font-bold gap-10 justify-between items-center": "flex text-black hover:text-blue-500 text-white font-bold gap-10 justify-between items-center"}>
           <li className="pl-4 pr-4 text-[25px]  duration-500 hover:bg-blue-400 hover:text-white rounded-md">Home</li>
           <li className="pl-4 pr-4 text-[25px] duration-500 hover:bg-blue-400 hover:text-white rounded-md">Services</li>
           <li className="pl-4 pr-4 text-[25px] duration-500 hover:bg-blue-400 hover:text-white rounded-md">About Us</li>
