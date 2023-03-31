@@ -7,7 +7,7 @@ import coding from '../assets/coding.jpg'
 const ICT = () => {
   return (
     <div className="flex justify-center w-full  mt-[70px] p-4 gap-20 items-center">
-        <div className="flex justify-center gap-20 items-center  p-4">
+        <div className="flex hidden md:block justify-center gap-20 items-center  p-4">
           <div className="flex flex-col gap-20 justify-center items-center">
               <img src={slide1} className="w-[300px] h-[300px] shadow-2xl shadow-gray-500 rounded-full"/>
               <img src={slide2} className="w-[200px] h-[200px] shadow-2xl shadow-gray-500 rounded-full"/>
@@ -32,7 +32,7 @@ const ICT = () => {
            </li>
 
 
-           <li className="ml-[60px] w-full">
+           <li className="md:ml-[60px] w-full">
            <div className="flex justify-start items-start w-full ">
            <h2 className="text-white bg-blue-400 float-left mr-[20px] p-5 text-bold md:h-[40px] md:w-[40px] rounded-full text-[30px] justify-center items-center flex rounded-full">2</h2>
             <div className="w-full inline-block">
