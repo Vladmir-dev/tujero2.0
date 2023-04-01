@@ -24,8 +24,8 @@ useEffect(() => {
   return (
     <div className={`${
         show
-          ? "md:fixed fixed z-20 w-screen bg-white drop-shadow-lg duration-500 h-auto "
-          : "fixed z-20 w-screen"
+          ? "md:fixed fixed z-20 p-2 w-screen bg-white drop-shadow-lg duration-500 h-auto "
+          : "fixed z-20 w-screen p-2"
       }`}>
       {/*destop view*/}
       <div className="flex md:justify-around justify-between items-center p-4">
@@ -38,8 +38,8 @@ useEffect(() => {
       </div>
         </Link>
         {/*mobile*/}
-        <button onClick={()=> {setShow(true);setDrop(!drop)}} className={show ? "md:hidden text-black text-[37px]" : "text-white text-[37px] md:hidden "}>
-          {drop ? <AiOutlineClose/> : <AiOutlineMenu />}
+        <button onClick={()=> {setDrop(!drop)}} className={show ? "md:hidden text-black text-[37px]" : "text-white text-[37px] md:hidden "}>
+          {drop ? <AiOutlineClose className="text-[30px]"/> : <AiOutlineMenu />}
         </button>
         
         {/* desktop*/}
@@ -66,7 +66,7 @@ useEffect(() => {
       {/*Mobile drop down*/}
       </div>
       {drop && (
-      <div className="w-full flex md:hidden justify-center font-serif p-4 items-center">
+      <div className="w-full flex md:hidden justify-center bg-white/50 rounded-md font-serif p-4 items-center">
         <ul className="flex flex-col gap-5 text-[25px] w-full">
         <Link 
               to='home'
