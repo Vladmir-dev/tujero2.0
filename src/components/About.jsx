@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div id="about" className="flex flex-col justify-center font-serif items-center md:mt-[150px] mt-[50px] p-4 md:mb-[50px]">
       <h1 className="md:text-[57px] text-[40px] flex md:flex-row flex-col text-center gap-2">About <h1 className="text-blue-500">Tujero Enterprises</h1></h1>
-      <div className="flex justify-center items-center mt-[50px] gap-20">
+      <div className="flex md:flex-row flex-col justify-center items-center mt-[50px] gap-20">
        
         <div className="md:w-[600px] flex flex-col gap-4">
           <h1 className="md:text-[35px] text-[30px] font-bold font-serif text-center text-blue-500">We Roar You Our Pride</h1>
@@ -25,9 +25,9 @@ const About = () => {
           </div>
 
         </div>
-        <div className="flex flex-col md:mt-[-130px] font-serif hidden md:block gap-5 ">
-          <h1 className="md:text-[35px] font-bold">Our Values</h1>
-          <div className="mt-[40px] justify-start items-start flex gap-5 flex-col">
+        <div className="flex flex-col md:mt-[-130px] mt-[-60px] font-serif gap-5 ">
+          <h1 className="md:text-[35px] md:text-start text-center text-[30px] font-bold">Our Values</h1>
+          <div className="md:mt-[40px] mt-[20px] justify-start items-start flex gap-5 flex-col">
             <div className="flex gap-5 bg-blue-500 rounded-full p-2 justify-center items-center">
               <AiOutlinePlus className="text-[35px] text-white"/>
               <h1 className="text-[30px] px-[15px]">Customer Satisfaction</h1>
