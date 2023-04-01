@@ -1,10 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react'
 import about1 from "../assets/we.jpg"
 import about2 from "../assets/about2.jpeg"
 import about3 from "../assets/woman.jpg"
-import {AiOutlinePlus} from 'react-icons/ai'
+import {AiOutlinePlus, AiOutlineMinus} from 'react-icons/ai'
 
 const About = () => {
+
+  const [show, setShow] = useState("")
+
   const values = [
     {
       name:"Customer Statisfaction",
@@ -28,6 +31,7 @@ const About = () => {
     }
   ]
 
+  
   return (
     <div id="about" className="flex flex-col justify-center font-serif items-center md:mt-[150px] mt-[50px] p-4 md:mb-[50px]">
       <h1 className="md:text-[57px] text-[40px] flex md:flex-row flex-col text-center gap-2">About <h1 className="text-blue-500">Tujero Enterprises</h1></h1>
@@ -52,9 +56,17 @@ const About = () => {
           <h1 className="md:text-[35px] md:text-start text-center text-[30px] font-bold">Our Values</h1>
           <div className="md:mt-[40px] mt-[20px] justify-start items-start flex gap-5 flex-col">
             {values.map((item, index) => (
-             <div className="flex gap-5 bg-blue-500 rounded-full p-2 justify-center items-center">
-              <AiOutlinePlus className="text-[30px] text-white"/>
+              <div key={index} className="flex flex-col justtify-start items-start">
+             <div onClick={()=>setShow(item.name)} className="flex gap-5 bg-blue-500 rounded-full p-2 justify-start items-center">
+                  {show === item.name ? <AiOutlineMinus className="text-[30px] text-white"/>: <AiOutlinePlus className="text-[30px] text-white"/> }
               <h1 className="md:text-[30px] text-[25px] px-[15px]">{item.name}</h1>
+            </div>
+                {show === item.name && (
+                 <div className="md:text-[20px]  w-[400px] flex-wrap">
+                <p className="ml-[70px]">{item.description}</p>
+              </div>
+                )}
+              
             </div>
             ))}
           </div>
