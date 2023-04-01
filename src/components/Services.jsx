@@ -1,8 +1,39 @@
 import React from 'react'
 import ICT from './ICT'
 import Marketing from './Marketing'
+import python from '../assets/python.png'
+import javascript  from '../assets/js.png'
+import html from '../assets/html.png'
+import css from '../assets/css.png'
+import react from '../assets/react.png'
+import react_native from '../assets/rn.png'
+import flutter from '../assets/flutter.png'
 
 const Services = () => {
+  const langs = [
+    {
+      url:python
+    },
+    {
+      url:javascript
+    },
+    {
+      url:html
+    },
+    {
+      url:css
+    },
+    {
+      url:react
+    },
+    {
+      url:react_native
+    },
+    {
+      url:flutter
+    }
+  ]
+
   return (
     <div id="services" className="mt-[50px] mb-[50px] font-serif flex flex-col justify-center items-center">
      <div className="flex flex-col justify-center items-center">
@@ -11,6 +42,11 @@ const Services = () => {
       </div>
       {/*ICT*/}
       <ICT />
+      <div className="flex justify-evenly hidden md:block w-full items-center mt-[100px]">
+      {langs.map((item, index)=> (
+        <img key={index} src={item.url} alt="logos" className="w-[100px] h-[100px]"/>
+      ))}  
+      </div>
       <Marketing />
     </div>
   )
