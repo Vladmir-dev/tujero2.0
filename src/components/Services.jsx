@@ -8,6 +8,7 @@ import css from '../assets/css.png'
 import react from '../assets/react.png'
 import react_native from '../assets/rn.png'
 import flutter from '../assets/flutter.png'
+import Collections from './Collections'
 
 const Services = () => {
   const langs = [
@@ -42,10 +43,15 @@ const Services = () => {
       </div>
       {/*ICT*/}
       <ICT />
-      <div className="flex justify-evenly hidden md:block w-full items-center mt-[100px]">
+      <div className="hidden md:block">
+      <div className="flex mt-[100px] gap-16">
       {langs.map((item, index)=> (
         <img key={index} src={item.url} alt="logos" className="w-[100px] h-[100px]"/>
       ))}  
+      </div>
+      </div>
+      <div className="w-full md:hidden p-4">
+      <Collections items={langs} />
       </div>
       <Marketing />
     </div>
