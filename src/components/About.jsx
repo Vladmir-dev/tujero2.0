@@ -40,7 +40,9 @@ const About = () => {
         <div className="md:w-[600px] flex flex-col gap-4">
           <h1 className="md:text-[35px] text-[30px] font-bold font-serif text-center text-blue-500">We Roar You Our Pride</h1>
           <h1 className="md:text-[37px] text-[30px] text-center">We're Most Proud Of Your Growth, Give us 1 year Working With You</h1>
-          <p className="text-center md:text-[20px] font-serif">Established and incorporated in Uganda, TUJERO ENTERPRISES is a private limited company headquartered at Mukwano courts on Buganda Road, Kampala. TUJERO ENTERPRISES was incepted 2022, our business interest have been in ICT Services. We are currently venturing in advertising mainly in Social Media/Digital Marketing, Billboards and Afri-Wine Production as well as provision of other services like Business/Tax consultancy, Ritz Beauty (Cosmetics), Auditing and Start-Ups</p>
+          <p className="text-center md:text-[20px] font-serif">Established and incorporated in Uganda, TUJERO ENTERPRISES is a private limited company headquartered at Mukwano courts on Buganda Road, Kampala. 
+TUJERO ENTERPRISES was incepted 2022, Our business interest are in Innovations and high Tech. We are currently venturing in Software, Website and App Development, Data Analysis, and advertising mainly in Branding, Social Media/Digital Marketing, Billboards, and production of Afri-Wine Production.
+Note we are cooking something in Tech you should anticipate…</p>
           <div>
           <h2 className="text-[30px] text-center font-semibold">Our Mission</h2>
           <p className="text-center md:text-[20px] font-serif">To deliver, and create high-quality and value-added products and services that satisfy the needs and expectations of our customers and partners, using cutting-edge technologies and creative strategies</p>
@@ -57,12 +59,12 @@ const About = () => {
           <div className="md:mt-[40px] mt-[20px] justify-start items-start flex gap-5 flex-col">
             {values.map((item, index) => (
               <div key={index} className="flex flex-col justtify-start items-start">
-             <div onClick={()=>setShow(item.name)} className="flex gap-5 bg-blue-500 rounded-full p-2 justify-start items-center">
-                  {show === item.name ? <AiOutlineMinus className="text-[30px] text-white"/>: <AiOutlinePlus className="text-[30px] text-white"/> }
+             <div onClick={()=>setShow(item.name)}  className="flex gap-5 bg-blue-500 duration-500 rounded-full p-2 justify-start items-center">
+                  {show === item.name ? <AiOutlineMinus style={{transition: 'opacity 0.5s ease-in-out'}} className="text-[30px] duration-500 text-white"/>: <AiOutlinePlus style={{transition: 'opacity 0.5s ease-in-out'}}  className="text-[30px] text-white"/> }
               <h1 className="md:text-[30px] text-[25px] px-[15px]">{item.name}</h1>
             </div>
                 {show === item.name && (
-                 <div className="md:text-[20px]  w-[400px] flex-wrap">
+                 <div style={{transition: 'opacity 0.8s ease-in-out'}} className="md:text-[20px]  w-[400px] flex-wrap duration-500">
                 <p className="ml-[70px]">{item.description}</p>
               </div>
                 )}

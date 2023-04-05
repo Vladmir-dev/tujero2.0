@@ -38,7 +38,7 @@ const ICT = () => {
            <h2 className="text-white bg-blue-400 float-left mr-[20px] p-5 text-bold md:h-[40px] md:w-[40px] rounded-full text-[30px] justify-center items-center flex rounded-full">2</h2>
             <div className="w-full inline-block">
            <h2 className="text-[30px]  font-bold text-blue-500">App Development</h2>
-            <p className="flex-wrap md:w-[400px]" >whether you're looking for a simple website to showcase your business, an e-commerce platform to boost your sales, or a complex software solution to streamline your operations, we have the expertise to help your business succeed in today's digital age</p>
+            <p className="flex-wrap md:w-[400px]" >Our team of expert developers specializes in creating mobile apps that enhance customer engagement, increase brand visibility, and drive business growth.Our app development services are tailored to meet the specific needs of your business, whether you're in healthcare, education, retail, or finance. We take the time to understand your unique requirements and develop customized solutions that solve your business challenges and provide a seamless user experience</p>
            </div>
            </div>
            </li>
@@ -49,7 +49,7 @@ const ICT = () => {
               <h2 className="text-white bg-blue-400 float-left mr-[20px] p-5 text-bold md:h-[40px] md:w-[40px] rounded-full text-[30px] justify-center items-center flex rounded-full">3</h2>
                 <div className="w-full inline-block">
                   <h2 className="text-[30px]  font-bold text-blue-500">Artificial Intelligence & Machine Learning</h2>
-                    <p className="flex-wrap md:w-[400px]" >whether you're looking for a simple website to showcase your business, an e-commerce platform to boost your sales, or a complex software solution to streamline your operations, we have the expertise to help your business succeed in today's digital age</p>
+                    <p className="flex-wrap md:w-[400px]" >Our AI and machine learning services are tailored to meet the specific needs of your business, whether you're in healthcare, finance, e-commerce, or any other industry. We take the time to understand your unique requirements and develop customized solutions that solve your business challenges and drive growth</p>
                 </div>
             </div>
            </li>
