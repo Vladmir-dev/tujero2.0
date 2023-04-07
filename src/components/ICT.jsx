@@ -13,29 +13,55 @@ const [selectedPackage, setSelectedPackage] = useState(null);
     setSelectedPackage(packageType);
   };
 
- const packages = [
+  const packages = [
     {
       type: 'A',
       name: 'Static website package',
-      description: 'This package offers a simple and basic website with up to 5 pages, basic SEO, social media integration, a free domain and hosting for one year, and 3 months website support and maintenance from publication of the site.',
+      description: [
+        {item:'This package offers a simple and basic website with up to 5 pages'}, 
+        {item:'basic SEO, social media integration'}, 
+        {item:'a free domain and hosting for one year'}, 
+        {item:'3 months website support and maintenance from publication of the site'}
+      ],
       price: 650000,
     },
     {
       type: 'B',
       name: 'Professional website package',
-      description: 'This package offers a more advanced website with up to 10 pages, a beautiful website interface, a free CMS, SEO, a visitor or traffic counter, a photo gallery, a feedback form, a reservation form, and more.',
+      description: [
+        {item:'A more advanced website with up to 10 pages'}, 
+        {item:'A beautiful website interface'}, 
+        {item:'A free CMS'},
+        {item:'SEO'}, 
+        {item:'A visitor or traffic counter'}, 
+        {item:'A photo gallery'}, {item:'a feedback form'},
+        {item:'A reservation form, and more.'}
+      ],
       price: 950000,
     },
     {
       type: 'C',
       name: 'Corporate website package',
-      description: 'This package offers a comprehensive website with up to 15 pages, all in “B”, a custom logo design if needed, a blog and a YouTube video integration if required or needed, an events calendar system, a file upload system, and more.',
+      description: [
+        {item:'A comprehensive website with up to 15 pages'},
+        {item:'all in “Professional website package”'}, 
+        {item:'A custom logo design if needed'},
+        {item:'A blog and a YouTube video integration if required or needed'}, 
+        {item:'An events calendar system'}, 
+        {item:'A file upload system, and more.'}
+      ],
       price: 1750000,
     },
     {
       type: 'D',
       name: 'E-commerce website package',
-      description: 'This package offers a fully functional online store with unlimited products and categories, all in “C”, a shopping cart system, a payment gateway integration, an inventory management system where required, and more.',
+      description: [
+        {item:'A fully functional online store with unlimited products and categories'}, 
+        {item:'All in “Corporate website package”'}, 
+        {item:'A shopping cart system'}, 
+        {item:'A payment gateway integration'}, 
+        {item:'An inventory management system where required, and more.'}
+      ],
       price: 3500000,
     },
   ];
@@ -43,7 +69,7 @@ const [selectedPackage, setSelectedPackage] = useState(null);
   return (
     <div className="flex justify-center w-full  mt-[70px] p-4 gap-20 items-start">
       <div className="hidden md:block md:w-[500px]">
-       <Pricing /> 
+       <Pricing packages={packages}/> 
       </div>
 
         <div className="flex justify-center items-center  h-full p-4">

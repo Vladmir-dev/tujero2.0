@@ -1,65 +1,14 @@
 import React, {useState} from 'react'
 import {IoIosCheckmarkCircle} from 'react-icons/io'
 
-const Pricing = () => {
+const Pricing = ({packages}) => {
    const [selectedPackage, setSelectedPackage] = useState(null);
 
   const handlePackageSelect = (packageType) => {
     setSelectedPackage(packageType);
   };
 
-  const packages = [
-    {
-      type: 'A',
-      name: 'Static website package',
-      description: [
-        {item:'This package offers a simple and basic website with up to 5 pages'}, 
-        {item:'basic SEO, social media integration'}, 
-        {item:'a free domain and hosting for one year'}, 
-        {item:'3 months website support and maintenance from publication of the site'}
-      ],
-      price: 650000,
-    },
-    {
-      type: 'B',
-      name: 'Professional website package',
-      description: [
-        {item:'A more advanced website with up to 10 pages'}, 
-        {item:'A beautiful website interface'}, 
-        {item:'A free CMS'},
-        {item:'SEO'}, 
-        {item:'A visitor or traffic counter'}, 
-        {item:'A photo gallery'}, {item:'a feedback form'},
-        {item:'A reservation form, and more.'}
-      ],
-      price: 950000,
-    },
-    {
-      type: 'C',
-      name: 'Corporate website package',
-      description: [
-        {item:'A comprehensive website with up to 15 pages'},
-        {item:'all in “Professional website package”'}, 
-        {item:'A custom logo design if needed'},
-        {item:'A blog and a YouTube video integration if required or needed'}, 
-        {item:'An events calendar system'}, 
-        {item:'A file upload system, and more.'}
-      ],
-      price: 1750000,
-    },
-    {
-      type: 'D',
-      name: 'E-commerce website package',
-      description: [
-        {item:'A fully functional online store with unlimited products and categories'}, 
-        {item:'All in “Corporate website package”'}, 
-        {item:'A shopping cart system'}, 
-        {item:'A payment gateway integration'}, 
-        {item:'An inventory management system where required, and more.'}
-      ],
-      price: 3500000,
-    },
-  ];
+
 
   return (
     <div>

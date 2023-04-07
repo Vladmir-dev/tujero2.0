@@ -3,6 +3,7 @@ import about1 from "../assets/we.jpg"
 import about2 from "../assets/about2.jpeg"
 import about3 from "../assets/woman.jpg"
 import {AiOutlinePlus, AiOutlineMinus} from 'react-icons/ai'
+import {IoIosArrowForward, IoIosArrowDown} from 'react-icons/io'
 
 const About = () => {
 
@@ -54,13 +55,14 @@ Note we are cooking something in Tech you should anticipate…</p>
           </div>
 
         </div>
-        <div className="flex flex-col md:mt-[-130px] mt-[-60px] font-serif gap-5 ">
+
+        <div className="flex flex-col md:mt-[-130px] mt-[-60px] ml-[30px] font-serif gap-5">
           <h1 className="md:text-[35px] md:text-start text-center text-[30px] font-bold">Our Values</h1>
           <div className="md:mt-[40px] mt-[20px] justify-start items-start flex gap-5 flex-col">
             {values.map((item, index) => (
               <div key={index} className="flex flex-col justtify-start items-start">
              <div onClick={()=>setShow(item.name)}  className="flex gap-5 bg-blue-500 duration-500 rounded-full p-2 justify-start items-center">
-                  {show === item.name ? <AiOutlineMinus style={{transition: 'opacity 0.5s ease-in-out'}} className="text-[30px] duration-500 text-white"/>: <AiOutlinePlus style={{transition: 'opacity 0.5s ease-in-out'}}  className="text-[30px] text-white"/> }
+                  {show === item.name ? <IoIosArrowDown style={{transition: 'opacity 0.5s ease-in-out'}} className="ml-[5px] text-[30px] duration-500 text-white"/>: <IoIosArrowForward style={{transition: 'opacity 0.5s ease-in-out'}}  className="ml-[5px] text-[30px] text-white"/> }
               <h1 className="md:text-[30px] text-[25px] px-[15px]">{item.name}</h1>
             </div>
                 {show === item.name && (
