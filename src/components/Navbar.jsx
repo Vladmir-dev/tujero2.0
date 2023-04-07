@@ -73,28 +73,28 @@ useEffect(() => {
               smooth={true} 
               duration={700}
             >
-        <li className="w-full flex justify-between">Home <AiOutlinePlus /></li>
+        <li className="w-full flex justify-between">Home </li>
         </Link>
         <Link 
               to="services"
               smooth={true} 
               duration={700}
             >
-        <li className="w-full flex justify-between">Services < AiOutlinePlus /></li>
+        <li className="w-full flex justify-between">Services </li>
         </Link>
         <Link 
               to='about'
               smooth={true} 
               duration={700}
             >
-        <li className="w-full flex justify-between">About Us <AiOutlinePlus /></li>
+        <li className="w-full flex justify-between">About Us </li>
         </Link>
          <Link 
               to='contact'
               smooth={true} 
               duration={700}
             >
-        <li className="w-full flex justify-between">Contact <AiOutlinePlus /> </li>
+        <li className="w-full flex justify-between">Contact  </li>
         </Link>
         </ul>
       </div>

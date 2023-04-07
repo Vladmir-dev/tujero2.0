@@ -1,22 +1,49 @@
-import React from 'react'
+import React,{useState} from 'react'
 import slide1 from "../assets/ai.jpg";
 import slide2 from "../assets/ic.jpg";
 import slide3 from "../assets/slide4.jpg";
 import coding from '../assets/coding.jpg'
+import Pricing from "./Pricing"
 
 const ICT = () => {
+
+const [selectedPackage, setSelectedPackage] = useState(null);
+
+  const handlePackageSelect = (packageType) => {
+    setSelectedPackage(packageType);
+  };
+
+ const packages = [
+    {
+      type: 'A',
+      name: 'Static website package',
+      description: 'This package offers a simple and basic website with up to 5 pages, basic SEO, social media integration, a free domain and hosting for one year, and 3 months website support and maintenance from publication of the site.',
+      price: 650000,
+    },
+    {
+      type: 'B',
+      name: 'Professional website package',
+      description: 'This package offers a more advanced website with up to 10 pages, a beautiful website interface, a free CMS, SEO, a visitor or traffic counter, a photo gallery, a feedback form, a reservation form, and more.',
+      price: 950000,
+    },
+    {
+      type: 'C',
+      name: 'Corporate website package',
+      description: 'This package offers a comprehensive website with up to 15 pages, all in “B”, a custom logo design if needed, a blog and a YouTube video integration if required or needed, an events calendar system, a file upload system, and more.',
+      price: 1750000,
+    },
+    {
+      type: 'D',
+      name: 'E-commerce website package',
+      description: 'This package offers a fully functional online store with unlimited products and categories, all in “C”, a shopping cart system, a payment gateway integration, an inventory management system where required, and more.',
+      price: 3500000,
+    },
+  ];
+
   return (
-    <div className="flex justify-center w-full  mt-[70px] p-4 gap-20 items-center">
-      <div className="hidden md:block">
-        <div className="flex justify-center gap-20 items-center p-4">
-          <div className="flex flex-col gap-20 justify-center items-center">
-              <img src={slide1} className="w-[300px] h-[300px] shadow-2xl shadow-gray-500 rounded-full"/>
-              <img src={slide2} className="w-[200px] h-[200px] shadow-2xl shadow-gray-500 rounded-full"/>
-          </div>
-          <div>
-            <img src={coding} className="w-[420px] h-[420px] rounded-full shadow-2xl shadow-gray-500"/>
-            </div>
-        </div>
+    <div className="flex justify-center w-full  mt-[70px] p-4 gap-20 items-start">
+      <div className="hidden md:block md:w-[500px]">
+       <Pricing /> 
       </div>
 
         <div className="flex justify-center items-center  h-full p-4">
