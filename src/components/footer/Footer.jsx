@@ -9,7 +9,7 @@ const Footer = () => {
   console.log("year", year);
   return (
     <div className="w-screen bg-gray-700 text-white p-6 mt-[50px]">
-      <ul className="md:flex md:flex-wrap md:justify-around md:items-center md:p-4">
+      <ul className="md:flex md:flex-wrap md:justify-around md:items-start md:p-4">
         <FooterLinks />
         <ul className="md:p-0 py-[10px] ">
           <li className="md:text-[25px] text-[20px] text-blue-500 font-semibold">

@@ -48,7 +48,7 @@ const Contact = () => {
            <textarea className="md:w-[1020px] w-[380px] md:h-[200px] h-[200px] align-top text-white bg-black/70 laeding-normal p-[10px]">New Message</textarea>
         </div>
         <div className="flex justify-center items-center md:mt-[20px]">
-          <button className="bg-white p-4 rounded-xl md:text-[25px] font-bold text-blue-500">Click To Send</button>
+          <button className="bg-white p-4 rounded-xl md:text-[25px] font-bold text-blue-500">Submit</button>
         </div>
       </div>
     </div>

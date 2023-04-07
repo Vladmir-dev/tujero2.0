@@ -12,7 +12,7 @@ const FooterLinks = () => {
 		<>
 		{items.map(item => (
         <div>
-          <div className="md:px-3 text-left md:cursor-pointer">
+          <div className="md:px-3 text-left md:cursor-pointer md:mt-[-30px]">
             <h1
               className="md:py-7 py-[10px] flex font-semibold text-blue-500 md:text-[25px] text-[17px] justify-between items-center duration-500"
               onClick={() =>

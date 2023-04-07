@@ -11,8 +11,6 @@ export const items = [
 		head: "Customer Services", submenu:true, subitems: [
 
 		{name:"Contact Us",link:"/"},
-		{name:"Orders & Returns",link:"/"},
 		{name:"Support Center",link:"/"},
-		{name:"Shipping & Delivery",link:"/"},
 	]}
 ]
