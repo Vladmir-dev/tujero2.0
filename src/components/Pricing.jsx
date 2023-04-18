@@ -1,9 +1,36 @@
 import React, {useState} from 'react'
 import {IoIosCheckmarkCircle} from 'react-icons/io'
 
-const Pricing = ({packages}) => {
-   const [selectedPackage, setSelectedPackage] = useState(null);
+const Pricing = ({packages, pricetype}) => {
+  let pack = {}
 
+  if (pricetype === 'ict'){
+    pack = {
+      type: 'A',
+      name: 'Static website package',
+      description: [
+        {item:'This package offers a simple and basic website with up to 5 pages'}, 
+        {item:'basic SEO, social media integration'}, 
+        {item:'a free domain and hosting for one year'}, 
+        {item:'3 months website support and maintenance from publication of the site'}
+      ],
+      price: 650000,
+    }
+  }else{
+    pack = {
+      type: 'B',
+      name: 'Graphic design package',
+      description: [
+        {item:'Logo design and Business card design (100 Paper Business cards) 110,000 UGX'}, 
+        {item:'Flyer and Social media banner design.The fee is 450,000 UGX depending on the complexity and number of designs.'},  
+      ],
+      price: 950000,
+    }
+  }
+
+  const [selectedPackage, setSelectedPackage] = useState(pack);
+
+  
   const handlePackageSelect = (packageType) => {
     setSelectedPackage(packageType);
   };

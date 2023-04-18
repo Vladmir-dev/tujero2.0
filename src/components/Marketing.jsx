@@ -39,7 +39,8 @@ const Marketing = () => {
         </p>
       </div>
       <div className="md:block hidden md:w-[500px]">
-        <Pricing packages={packages}/> 
+        <Card />
+        <img src={person} alt="person"/> 
       </div>
     </div>
   )

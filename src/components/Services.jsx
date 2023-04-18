@@ -89,6 +89,31 @@ const Services = () => {
     },
   ];
 
+const marketing = [
+    
+    {
+      type: 'B',
+      name: 'Graphic design package',
+      description: [
+        {item:'Logo design and Business card design (100 Paper Business cards) 110,000 UGX'}, 
+        {item:'Flyer and Social media banner design.The fee is 450,000 UGX depending on the complexity and number of designs.'},  
+      ],
+      price: 950000,
+    },
+    {
+      type: 'A',
+      name: 'Digital marketing package',
+      description: [
+        {item:'basic digital marketing services'}, 
+        {item:'Social media marketing'}, 
+        {item:'Email marketing'}, 
+        {item:'Content Creation and marketing'},
+        {item:'SEO (search engine optimization)'}
+      ],
+      price: 'The Fee ranges from 500,000 to 1,000,000 UGX per month depending on the scope and duration of the campaign',
+    }, 
+  ];
+
   return (
     <div id="services" className="mt-[50px] mb-[50px] font-serif flex flex-col justify-center items-center">
      <div className="flex flex-col justify-center items-center">
@@ -97,8 +122,8 @@ const Services = () => {
       </div>
       {/*ICT*/}
       <ICT />
-      <div>
-        <Pricing packages={packages}/>
+      <div className="mt-[100px] mb-[50px]">
+        <Pricing packages={packages} pricetype={"ict"}/>
       </div>
       <div className="hidden md:block">
       <div className="flex mt-[100px] gap-16">
@@ -111,6 +136,9 @@ const Services = () => {
       <Collections items={langs} />
       </div>
       <Marketing />
+      <div>
+        <Pricing packages={marketing} pricetype={"marketing"}/>
+      </div>
     </div>
   )
 }
