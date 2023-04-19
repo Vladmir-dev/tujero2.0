@@ -31,7 +31,7 @@ const Marketing = () => {
   ];
 
   return (
-    <div id="marketing" className="md:mt-[160px] mt-[50px] p-4 mb-[50px] flex gap-20 justify-center items-start">
+    <div id="marketing" className="md:mt-[160px] mt-[50px] p-4 mb-[50px] flex gap-20 md:mb-[100px] justify-center items-start">
       <div className="inline-block place-items-center">
         <h1 className="text-[57px] text-center md:text-start">SEO & Digital <br/> Marketing For Your<br/> Business</h1>
         <p className="text-[25px] text-center md:text-start md:w-[700px] italic">We at Tujero know the hardles that many business face in trying to put themselves out there. 

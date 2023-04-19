@@ -20,11 +20,11 @@ const Footer = () => {
           <li className="text-[16px] p-[2px]">Phone:+256 781 316707/+256 706 181003</li>
           <li className="text-[16px] p-[2px]">Email :info@tujero.com</li>
           <li className="flex mt-[10px] p-[5px] gap-4 items-center">
-            <a href="/"><FaFacebookF /></a>
-            <a href="/"><AiOutlineTwitter /></a>
+            <a href="https://www.facebook.com/profile.php?id=100089715516181&mibextid=LQQJ4d"><FaFacebookF /></a>
+            <a href="https://twitter.com/TUJERO1"><AiOutlineTwitter /></a>
             <a href="https://instagram.com/tuje_ro?igshid=YmMyMTA2M2Y="><AiFillInstagram /></a>
             <a href="https://wa.me/message/3KOPMWZIDHSVO1"><BsWhatsapp /></a>
-            <a href="https://www.linkedin.com/company/african-farm/"><BsLinkedin /></a>
+            <a href="https://www.linkedin.com/company/tujero e"><BsLinkedin /></a>
           </li>
         </ul>
       </ul>

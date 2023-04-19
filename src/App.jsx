@@ -29,7 +29,7 @@ function App() {
   ];
 
   return (
-    <div className="box-border flex flex-col">
+    <div className="box-border flex flex-col bg-gray-100">
        <Navbar />
       <Carousel imageSlide={slides} height="100vh" />
       <Services />

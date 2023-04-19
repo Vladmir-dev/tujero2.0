@@ -70,12 +70,12 @@ const [selectedPackage, setSelectedPackage] = useState(null);
     <div className="flex flex-row justify-center w-full  mt-[70px] p-4 gap-20 items-center">
       <div className="hidden md:block p-4">
         <div className="flex justify-center items-center gap-16">
-        <div className="flex flex-col gap-10">
+        {/* <div className="flex flex-col gap-10">
           <img src={slide1} alt="image1" className="rounded-full w-[300px] h-[300px] shadow-2xl"/>
           <img src={slide2} alt="image2" className="rounded-full w-[250px] h-[250px] shadow-2xl"/>
-        </div>
+        </div> */}
         
-        <img src={coding} alt="coding" className="rounded-full w-[400px] h-[400px] shadow-2xl"/>
+        <img src={coding} alt="coding" className="rounded-full w-[600px] h-[600px] shadow-2xl"/>
       </div>
       </div>
 
@@ -87,7 +87,7 @@ const [selectedPackage, setSelectedPackage] = useState(null);
               <h2 className="text-white bg-blue-400 float-left mr-[20px] p-5 text-bold md:h-[40px] md:w-[40px] rounded-full text-[30px] justify-center items-center flex rounded-full">1</h2>
                 <div className="w-full inline-block">
                   <h2 className="text-[30px] text-blue-500">Web Development</h2>
-                    <p className="flex-wrap md:w-[400px]" >whether you're looking for a simple website to showcase your business, an e-commerce platform to boost your sales, or a complex software solution to streamline your operations, we have the expertise to help your business succeed in today's digital age</p>
+                    <p className="flex-wrap md:w-[400px]" >Whether you're looking for a simple website to showcase your business, an e-commerce platform to boost your sales, or a complex software solution to streamline your operations, we have the expertise to help your business succeed in today's digital age</p>
                 </div>
             </div>
            </li>

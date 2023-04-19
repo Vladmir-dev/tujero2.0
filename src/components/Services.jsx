@@ -8,8 +8,14 @@ import css from '../assets/css.png'
 import react from '../assets/react.png'
 import react_native from '../assets/rn.png'
 import flutter from '../assets/flutter.png'
+import django from '../assets/django.png'
+import node from '../assets/nodejs.png'
 import Collections from './Collections'
+import docker from '../assets/docker.png'
+import kubernates from '../assets/kubernates.png'
 import Pricing from './Pricing'
+import codetunnel from '../assets/codetunnel.jpeg'
+import marketingimage from '../assets/marketing.jpg'
 
 const Services = () => {
   const langs = [
@@ -29,17 +35,26 @@ const Services = () => {
       url:react
     },
     {
-      url:react_native
+      url:flutter
     },
     {
-      url:flutter
+      url:django
+    },
+    {
+      url:node
+    },
+    {
+      url:docker
+    },
+    {
+      url:kubernates
     }
   ]
 
   const packages = [
     {
       type: 'A',
-      name: 'Static website package',
+      name: 'Static Website package',
       description: [
         {item:'This package offers a simple and basic website with up to 5 pages'}, 
         {item:'basic SEO, social media integration'}, 
@@ -50,7 +65,7 @@ const Services = () => {
     },
     {
       type: 'B',
-      name: 'Professional website package',
+      name: 'Professional Website package',
       description: [
         {item:'A more advanced website with up to 10 pages'}, 
         {item:'A beautiful website interface'}, 
@@ -64,7 +79,7 @@ const Services = () => {
     },
     {
       type: 'C',
-      name: 'Corporate website package',
+      name: 'Corporate Website package',
       description: [
         {item:'A comprehensive website with up to 15 pages'},
         {item:'all in “Professional website package”'}, 
@@ -77,7 +92,7 @@ const Services = () => {
     },
     {
       type: 'D',
-      name: 'E-commerce website package',
+      name: 'E-commerce Website package',
       description: [
         {item:'A fully functional online store with unlimited products and categories'}, 
         {item:'All in “Corporate website package”'}, 
@@ -93,7 +108,7 @@ const marketing = [
     
     {
       type: 'B',
-      name: 'Graphic design package',
+      name: 'Graphic Design package',
       description: [
         {item:'Logo design and Business card design (100 Paper Business cards) 110,000 UGX'}, 
         {item:'Flyer and Social media banner design.The fee is 450,000 UGX depending on the complexity and number of designs.'},  
@@ -102,7 +117,7 @@ const marketing = [
     },
     {
       type: 'A',
-      name: 'Digital marketing package',
+      name: 'Digital Marketing package',
       description: [
         {item:'basic digital marketing services'}, 
         {item:'Social media marketing'}, 
@@ -110,9 +125,29 @@ const marketing = [
         {item:'Content Creation and marketing'},
         {item:'SEO (search engine optimization)'}
       ],
-      price: 'The Fee ranges from 500,000 to 1,000,000 UGX per month depending on the scope and duration of the campaign',
+      price: '500,000 to 1,000,000 ',
     }, 
   ];
+
+  const bgImageStyle = {
+    // backgroundImage: `url(${leaves})`,
+    backgroundPosition: "center center",
+    backgroundRepeat:'no-repeat',
+    backgroundSize: "cover",
+    // transition: "background 0.6s ease-in-out",
+    backgroundAttachment:'fixed',
+    backgroundImage: `rgba(0,0,0,0)), url(${codetunnel})`,
+  };
+
+  const mImageStyle = {
+    // backgroundImage: `url(${leaves})`,
+    backgroundPosition: "center center",
+    backgroundRepeat:'no-repeat',
+    backgroundSize: "cover",
+    // transition: "background 0.6s ease-in-out",
+    backgroundAttachment:'fixed',
+    backgroundImage: `url(${marketingimage})`,
+  };
 
   return (
     <div id="services" className="mt-[50px] mb-[50px] font-serif flex flex-col justify-center items-center">
@@ -122,9 +157,10 @@ const marketing = [
       </div>
       {/*ICT*/}
       <ICT />
-      <div className="mt-[100px] mb-[50px]">
+      <div className="mt-[100px] mb-[50px] flex flex-wrap p-12 pb-[150px] w-full flex justify-center items-center" style={bgImageStyle}>
         <Pricing packages={packages} pricetype={"ict"}/>
       </div>
+      
       <div className="hidden md:block">
       <div className="flex mt-[100px] gap-16">
       {langs.map((item, index)=> (
@@ -136,7 +172,7 @@ const marketing = [
       <Collections items={langs} />
       </div>
       <Marketing />
-      <div>
+      <div className="mt-[100px] mb-[50px] flex flex-wrap p-12 pb-[150px] w-full flex justify-center items-center" style={mImageStyle}>
         <Pricing packages={marketing} pricetype={"marketing"}/>
       </div>
     </div>

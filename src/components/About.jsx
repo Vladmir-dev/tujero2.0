@@ -7,7 +7,7 @@ import {IoIosArrowForward, IoIosArrowDown} from 'react-icons/io'
 
 const About = () => {
 
-  const [show, setShow] = useState("")
+  const [show, setShow] = useState("Customer Statisfaction")
 
   const values = [
     {
@@ -20,7 +20,7 @@ const About = () => {
     },
     {
       name:"TeamWork",
-      description:"We adhere to high standards of quality and excellence in everything we do"
+      description:"We work together as a team and leverage our diverse skills and expertise to achieve our vision."
     },
     {
       name:"Integrity",
