@@ -136,7 +136,7 @@ const marketing = [
     backgroundSize: "cover",
     // transition: "background 0.6s ease-in-out",
     backgroundAttachment:'fixed',
-    backgroundImage: `rgba(0,0,0,0)), url(${codetunnel})`,
+    backgroundImage: `url(${codetunnel})`,
   };
 
   const mImageStyle = {

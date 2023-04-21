@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import {IoIosCheckmarkCircle} from 'react-icons/io'
+import { motion } from "framer-motion";
 
 const Pricing = ({packages, pricetype}) => {
   let pack = {}
@@ -38,12 +39,19 @@ const Pricing = ({packages, pricetype}) => {
 
 
   return (
-    <div >
-      <h2 className="md:text-[47px] text-center m-[ 10px]">{pricetype === 'ict' ? 'Choose A Web Package' : 'Choose A Graphical Package'}</h2>
-      <div className="flex mt-[50px] gap-5 flex-wrap justify-center items-center">
+    <div
+    
+     >
+      <h2 className="md:text-[47px] text-[35px] text-blue-600 font-bold text-center">{pricetype === 'ict' ? 'Choose A Web Package' : 'Choose A Graphical Package'}</h2>
+      <div className="flex gap-5 flex-wrap justify-center items-center">
         {packages.map((pkg) => (
-          <div key={pkg.type} className="rounded-md  duration-500  shadow-md flex justify-center items-center">
-            <div className="flex flex-col shadow-xl py-6 bg-blue-300 rounded-[10px] md:w-[400px] h-[600px] p-[50px] items-center mt-[50px] border-[2px] border-solid p-[10px]">
+          <motion.div
+          initial={{ y: "15vw" }}
+          whileInView={{ y: 0 }}
+          viewport={{ once: false }}
+          transition={{ type: "spring", duration: 2, bounce: 0.1 }}
+          key={pkg.type} className="rounded-md  duration-500  shadow-md flex justify-center items-center">
+            <div className="flex flex-col shadow-xl py-6 bg-blue-300 rounded-[10px] md:w-[400px] md:h-[600px] p-[50px] items-center mt-[50px] border-[2px] border-solid p-[10px]">
           <h3 className="text-[30px] text-white font-bold text-center">{pkg.name}</h3>
           <p className="italic text-center mt-[10px]">This package offers</p>
           <p className="text-[27px] font-bold mt-[15px] text-center">{pkg.price} UGX</p>
@@ -57,7 +65,7 @@ const Pricing = ({packages, pricetype}) => {
           </div>
           
         </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
