@@ -57,10 +57,15 @@ const Pricing = ({packages, pricetype}) => {
           <p className="text-[27px] font-bold mt-[15px] text-center">{pkg.price} UGX</p>
           <div className="flex-wrap flex flex-col gap-3 mt-[50px]">
           {pkg.description.map((ele,index) => (
-            <h4 key={index} className="text-start flex gap-3 justify-start items-center">
-               <IoIosCheckmarkCircle  className="text-[20px] text-blue-700"/>
-              {ele.item}   
-            </h4>
+            <div key={index} className="text-start flex gap-3 justify-start items-center">
+              <div>
+                <IoIosCheckmarkCircle  className="text-[20px] text-blue-700"/>
+              </div>
+               <div>
+                {ele.item}
+               </div>
+                 
+            </div>
           ))}
           </div>
           
